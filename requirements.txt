@@ -2,6 +2,6 @@ fastapi
 uvicorn
 sentence-transformers
 faiss-cpu
-transformers
 python-multipart
-tf-keras
+requests
+pydantic
