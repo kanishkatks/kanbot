@@ -1,3 +1,5 @@
 .env
-.json
+*.json
 data/
+.qodo
+.env.yaml

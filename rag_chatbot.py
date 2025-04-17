@@ -59,7 +59,7 @@ def generate_with_llama(prompt: str) -> str:
             {"role": "user", "content": prompt}
 
         ],
-        "max_tokens" :512,
+        "max_tokens" :1000,
         "model" : "meta-llama/Meta-Llama-3.1-405B-Instruct"
     }
     try:
@@ -68,7 +68,7 @@ def generate_with_llama(prompt: str) -> str:
             headers=headers, json=payload)
         response.raise_for_status()
         result = response.json()
-        return result["choices"][0]["message"]
+        return result["choices"][0]["message"]["content"]
     except Exception as e:
         print("llama fallback failed:", e)
         return "Sorry, I couldn't generate an answer."
@@ -83,7 +83,7 @@ def ask_question(request: QuestionRequest):
     prompt = f"Context:\n{context}\n\nQuestion: {request.question}"
 
     response = generate_with_llama(prompt)
-    return {"answer": response.strip()}
+    return {"answer": response}
 
 
 # CLI for local testing

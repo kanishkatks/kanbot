@@ -2,8 +2,6 @@ fastapi
 uvicorn
 sentence-transformers
 faiss-cpu
-ollama
 transformers
 python-multipart
 tf-keras
-playwright
