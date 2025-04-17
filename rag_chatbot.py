@@ -6,6 +6,7 @@ import requests
 from sentence_transformers import SentenceTransformer
 import faiss
 import pickle
+from fastapi.middleware.cors import CORSMiddleware
 
 # Load environment variables
 HF_API_TOKEN = os.getenv("HF_API_TOKEN")
@@ -13,6 +14,16 @@ HF_API_TOKEN = os.getenv("HF_API_TOKEN")
 
 # FastAPI App
 app = FastAPI()
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 # Paths to local document and vector DB
 DOC_PATH = "data/doc.md"
@@ -86,7 +97,7 @@ def ask_question(request: QuestionRequest):
     return {"answer": response}
 
 
-# CLI for local testing
+# for local testing
 if __name__ == "__main__":
     query = input("Ask something: ")
 

@@ -11,26 +11,12 @@ run_api:
 	uvicorn app.rag_chatbot:app --reload --port 8000
 
 
-create_models_folder:
-	mkdir models/models
-	mkdir models/metrics
-	mkdir models/params
-
-reset_model_folders:
-	rm -rf models
-	mkdir models/models
-	mkdir models/metrics
-	mkdir models/params
-
 #======================#
 #          GCP         #
 #======================#
 
 gcloud-set-project:
 	gcloud config set project $(GCP_PROJECT)
-
-gcloud-load-raw-data:
-	python -c 'from anomguard.interface.main import load_raw_data; load_raw_data()'
 
 #======================#
 #         Docker       #
@@ -45,13 +31,13 @@ docker_build_local:
 
 docker_run_local:
 	docker run \
-		-e PORT=8000 -p $(DOCKER_LOCAL_PORT):8000 \
+		-e PORT=4000 -p $(DOCKER_LOCAL_PORT):4000 \
 		--env-file .env \
 		$(DOCKER_IMAGE_NAME):local
 
 docker_run_local_interactively:
 	docker run -it \
-		-e PORT=8000 -p $(DOCKER_LOCAL_PORT):8000 \
+		-e PORT=4000 -p $(DOCKER_LOCAL_PORT):4000 \
 		--env-file .env \
 		$(DOCKER_IMAGE_NAME):local \
 		bash
@@ -75,14 +61,14 @@ docker_build_alternative:
 docker_run:
 	docker run \
 		--platform linux/amd64 \
-		-e PORT=8000 -p $(DOCKER_LOCAL_PORT):8000 \
+		-e PORT=4000 -p $(DOCKER_LOCAL_PORT):4000 \
 		--env-file .env \
 		$(DOCKER_IMAGE_PATH):prod
 
 docker_run_interactively:
 	docker run -it \
 		--platform linux/amd64 \
-		-e PORT=8000 -p $(DOCKER_LOCAL_PORT):8000 \
+		-e PORT=4000 -p $(DOCKER_LOCAL_PORT):4000 \
 		--env-file .env \
 		$(DOCKER_IMAGE_PATH):prod \
 		bash
