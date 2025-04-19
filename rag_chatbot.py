@@ -1,6 +1,5 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from typing import Optional
 import os
 import requests
 from sentence_transformers import SentenceTransformer
@@ -14,6 +13,7 @@ HF_API_TOKEN = os.getenv("HF_API_TOKEN")
 
 # FastAPI App
 app = FastAPI()
+
 
 
 app.add_middleware(
@@ -84,6 +84,11 @@ def generate_with_llama(prompt: str) -> str:
         print("llama fallback failed:", e)
         return "Sorry, I couldn't generate an answer."
 
+@app.get("/")
+def root():
+    return {
+        'message': "Hi, running!"
+    }
 @app.post("/ask")
 def ask_question(request: QuestionRequest):
     # Index if missing
