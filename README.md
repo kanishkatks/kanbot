@@ -2,7 +2,8 @@
 
 A smart, conversational assistant built into my portfolio website that answers questions about my background, projects, and skills in natural language. It feels like chatting with me, even when I'm not available!
 
-![Portfolio Assistant Demo](https://via.placeholder.com/800x400?text=Portfolio+Assistant+Demo)
+![Portfolio Assistant Demo](https://github.com/user-attachments/assets/c2d521b0-7a98-4ece-90e8-b787321e4705)
+
 
 🌐 Live: [kanishkawaghmare.com](https://kanishkawaghmare.com)
 
@@ -18,7 +19,7 @@ This assistant helps visitors to my website learn more about:
 
 Instead of reading through my entire portfolio, visitors can simply ask questions like "What experience does Kanishka have with machine learning?" or "Tell me about the Movie Recommender project" and get immediate, accurate answers.
 
-![How It Works - Diagram](https:/![Rag_Image](https://github.com/user-attachments/assets/5f6f7c99-cfbc-425c-ba48-9c2151088f91)
+
 
 
 ---
@@ -36,7 +37,7 @@ This approach (called "Retrieval-Augmented Generation" or RAG) ensures responses
 - Detailed where needed
 - Conversational and helpful
 
-![RAG Process Diagram](https://via.placeholder.com/700x300?text=RAG+Process+Flowchart)
+![RAG Process Diagram](https://github.com/user-attachments/assets/b4886b87-65ac-4a8c-a7b6-626f59abda33)
 
 ---
 
@@ -58,8 +59,6 @@ This approach (called "Retrieval-Augmented Generation" or RAG) ensures responses
 - **Always Available**: Hosted on Google Cloud Run
 - **Scalable**: Handles multiple conversations simultaneously
 - **Containerized**: Packaged in Docker for consistent deployment
-
-![Architecture Diagram](https://via.placeholder.com/700x400?text=Architecture+Diagram)
 
 ---
 
