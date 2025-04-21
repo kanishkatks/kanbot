@@ -73,7 +73,7 @@ Kanishka is very proud of him and would be happy to share his pictures with you!
 
 **Assistant**: He was born in India
 
-![Example Chat Screenshot](https://github.com/user-attachments/assets/0760e584-c4bd-42d1-8496-2641e8bc27e6)
+![Example Chat Screenshot](https://github.com/user-attachments/assets/143303fd-9796-4aa0-93b9-951099ffaedc)
 
 ---
 
