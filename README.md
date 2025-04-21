@@ -144,7 +144,7 @@ docker run -p 8080:8080 -e HF_API_TOKEN=your_token_here kanbot
 gcloud builds submit --tag gcr.io/YOUR_PROJECT_ID/kanbot
 
 gcloud run deploy kabot \
-  --image gcr.io/YOUR_PROJECT_ID/portfolio-assistant \
+  --image gcr.io/YOUR_PROJECT_ID/kanbot \
   --platform managed \
   --region YOUR_REGION \
   --set-env-vars HF_API_TOKEN=your_token_here \
@@ -175,8 +175,6 @@ I'm planning to add these features in upcoming versions:
 
 
 I'm open to collaboration, feedback, or just a friendly chat about data science and AI!
-
-
 
 ---
 
