@@ -68,20 +68,20 @@ This approach (called "Retrieval-Augmented Generation" or RAG) ensures responses
 
 **Assistant**: He was born in India
 
-![Example Chat Screenshot]!(https://github.com/user-attachments/assets/976bec36-ec73-4dc1-8f56-62005e152ef8)
+![Example Chat Screenshot](https://github.com/user-attachments/assets/976bec36-ec73-4dc1-8f56-62005e152ef8)
 
 **User**: "What is his dog's name?"
 
 **Assistant**: "Kanishka's dog's name is Beau, a four-year-old Boston Terrier. He's very proud of Beau and eager to share pictures!"
 
-![Example Chat Screenshot2]!(https://github.com/user-attachments/assets/4f7985a1-9187-4ccf-8392-b8c091adadaa)
+![Example Chat Screenshot2](https://github.com/user-attachments/assets/4f7985a1-9187-4ccf-8392-b8c091adadaa)
 
 **User**: "What is his visa status?"
 
 **Assistant**: Kanishka P Waghmare's visa status is that he holds a Partner visa, and therefore, does not require a TWV (Tewerkstellingsvergunning, or work permit) to work in the Netherlands."
 
 
-![Example Chat Screenshot3]!(https://github.com/user-attachments/assets/ce2d1a41-b6d5-4bd1-94db-d634b2f57688)
+![Example Chat Screenshot3](https://github.com/user-attachments/assets/ce2d1a41-b6d5-4bd1-94db-d634b2f57688)
 
 
 
