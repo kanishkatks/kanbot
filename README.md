@@ -64,24 +64,16 @@ This approach (called "Retrieval-Augmented Generation" or RAG) ensures responses
 
 ## Example Conversations
 
-**User**: "What projects has Kanishka worked on?"
+**User**: "What's his dog's name??"
 
-**Assistant**: "Kanishka has worked on several data science and machine learning projects, including:
-- A RAG-powered portfolio chatbot (this one!)
-- The 'Barbenheimer' NLP project analyzing social media trends
-- Computer vision models for medical imaging
-- Data visualization dashboards for business intelligence
-Would you like more details about any specific project?"
+**Assistant**: "The dog's name is Beau, and he's a four-year-old Boston Terrier. 
+Kanishka is very proud of him and would be happy to share his pictures with you!"
 
-**User**: "Tell me about their research background."
+**User**: "Where was he born?."
 
-**Assistant**: [Example response would appear here]
+**Assistant**: He was born in India
 
-**User**: "What are their technical skills?"
-
-**Assistant**: [Example response would appear here]
-
-![Example Chat Screenshot](https://via.placeholder.com/500x600?text=Example+Chat+Screenshot)
+![Example Chat Screenshot](https://github.com/user-attachments/assets/0760e584-c4bd-42d1-8496-2641e8bc27e6)
 
 ---
 
@@ -106,8 +98,8 @@ Would you like more details about any specific project?"
 
 1. **Clone & Install**
 ```bash
-git clone https://github.com/kanishkatks/rag-chatbot.git
-cd rag-chatbot
+git clone https://github.com/kanishkatks/kanbot.git
+cd kanbot
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
@@ -129,17 +121,17 @@ uvicorn rag_chatbot:app --host 0.0.0.0 --port 8080
 ### Option 2: Using Docker
 
 ```bash
-docker build -t portfolio-assistant .
-docker run -p 8080:8080 -e HF_API_TOKEN=your_token_here portfolio-assistant
+docker build -t kanbot .
+docker run -p 8080:8080 -e HF_API_TOKEN=your_token_here kanbot
 ```
 
 ### Option 3: Deploy to Cloud
 
 ```bash
 # Google Cloud Run deployment
-gcloud builds submit --tag gcr.io/YOUR_PROJECT_ID/portfolio-assistant
+gcloud builds submit --tag gcr.io/YOUR_PROJECT_ID/kanbot
 
-gcloud run deploy portfolio-assistant \
+gcloud run deploy kabot \
   --image gcr.io/YOUR_PROJECT_ID/portfolio-assistant \
   --platform managed \
   --region YOUR_REGION \
@@ -166,13 +158,13 @@ I'm planning to add these features in upcoming versions:
 
 👤 **Kanishka Waghmare**  
 🌐 [kanishkawaghmare.com](https://kanishkawaghmare.com)  
-📧 hello@kanishkawaghmare.com  
+📧 kanishkatks@gmail.com  
 🔗 [LinkedIn](https://linkedin.com/in/yourprofile)
-🔗 [GitHub](https://github.com/kanishkatks)
+
 
 I'm open to collaboration, feedback, or just a friendly chat about data science and AI!
 
-![Profile Photo](https://via.placeholder.com/150x150?text=Kanishka)
+
 
 ---
 
