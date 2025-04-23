@@ -1,4 +1,4 @@
-# Kanbot Portfolio Assistant: Talk to My Experience & Projects 
+# Kanbot RAG powered portfolio assistant: Talk to My Experience & Projects 
 
 A smart, conversational assistant built into my portfolio website that answers questions about my background, projects, and skills in natural language. It feels like chatting with me, even when I'm not available!
 
