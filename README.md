@@ -160,8 +160,6 @@ gcloud run deploy kabot \
 I'm planning to add these features in upcoming versions:
 
 - **Memory**: Remember previous questions in the same conversation
-- **Document Upload**: Upload a resume or job description to get personalized insights
-- **Career Advice Mode**: Get customized career guidance based on my experience
 - **Multi-language Support**: Chat in different languages
 
 ---
